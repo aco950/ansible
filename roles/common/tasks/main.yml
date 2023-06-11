@@ -1,0 +1,7 @@
+---
+# This playbook contains common tasks that will be run on all nodes.
+
+- import_tasks: create_admin_user.yml
+- import_tasks: disable_firewalld.yml
+- import_tasks: install_extras.yml
+

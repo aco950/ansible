@@ -1,0 +1,9 @@
+---
+# Install some useful packages that aren't installed by default on a 
+# CentOS 7 minimal installation.
+
+- name: Install extra packages
+  yum:
+    name: ['bind-utils', 'jq', 'lsof', 'traceroute', 'tree', 'unzip', 'vim-enhanced', 'wget']
+    state: present
+

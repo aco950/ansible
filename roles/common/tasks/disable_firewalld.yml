@@ -1,0 +1,23 @@
+---
+# Check if a service is defined in the system, stop it, and finally, 
+# disable it.
+
+- name: Check if a service is defined in the system
+  shell: |
+    systemctl status "{{ service_name }}"
+  register: service_status
+  failed_when: not(service_status.rc == 3 or service_status.rc == 0)
+  ignore_errors: yes 
+
+- name: Stop a service
+  systemd:
+    name: "{{ service_name }}"
+    state: stopped
+  when: service_status.rc == 0
+
+- name: Disable a service
+  systemd:
+    name: "{{ service_name }}"
+    enabled: no
+  when: service_status.rc == 0
+
