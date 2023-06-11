@@ -1,0 +1,6 @@
+---
+# This playbook installs and enables cloud-init.
+
+- import_tasks: install_cloud-init.yml
+- import_tasks: enable_cloud-init.yml
+

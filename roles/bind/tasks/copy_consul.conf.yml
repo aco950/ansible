@@ -1,0 +1,10 @@
+---
+- name: Copy consul.conf to /etc/named directory
+  copy:
+    src: consul.conf
+    dest: "/etc/{{ service_name }}/consul.conf"
+    owner: root
+    group: "{{ service_name }}"
+    mode: 0640
+    backup: yes
+

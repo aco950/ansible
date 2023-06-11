@@ -1,0 +1,7 @@
+---
+# Here are some variables related to the Ansible consul role.
+
+version: "1.15.3"
+service_name: "consul"
+prefix: "/usr/local/bin"
+

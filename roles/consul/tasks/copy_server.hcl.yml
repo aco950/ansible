@@ -1,0 +1,12 @@
+---
+- name: Copy Consul server configuration file
+  copy:
+    src: server.hcl
+    #dest: /etc/consul.d/server.hcl
+    dest: "/etc/{{ service_name }}.d/server.hcl"
+    #owner: consul 
+    owner: "{{ service_name }}"
+    #group: consul 
+    group: "{{ service_name }}"
+    mode: '0640'
+

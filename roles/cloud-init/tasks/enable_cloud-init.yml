@@ -1,0 +1,6 @@
+---
+- name: Enable cloud-init service 
+  systemd:
+    name: "{{ service_name }}"
+    enabled: yes
+

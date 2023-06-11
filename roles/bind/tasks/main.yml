@@ -1,0 +1,9 @@
+---
+# Tasks for provisioning Consul with DNS forwarding via BIND.
+
+- import_tasks: install_bind.yml
+- import_tasks: copy_named.conf.yml
+- import_tasks: copy_consul.conf.yml
+- import_tasks: copy_resolv.conf.yml
+- import_tasks: enable_named.yml
+

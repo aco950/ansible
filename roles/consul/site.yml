@@ -1,0 +1,13 @@
+---
+- name: Template for provisioning Consul servers. Using with Packer.
+  hosts: 127.0.0.1
+  connection: local
+  gather_facts: no
+  roles:
+    - role: consul
+    - role: cloud-init
+    # The 'bind' role goes last, as modifying resolv.conf can cause 
+    # issues with Packer provisioning. In this case, the role is setting
+    # resolv.conf to 127.0.0.1.
+    - role: bind
+

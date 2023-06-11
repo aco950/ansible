@@ -1,0 +1,5 @@
+---
+# Here are some variables related to the Ansible cloud-init role.
+
+service_name: "cloud-init"
+

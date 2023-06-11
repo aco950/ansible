@@ -1,0 +1,6 @@
+---
+- name: Enable BIND 
+  systemd:
+    name: "{{ service_name }}"
+    enabled: yes 
+

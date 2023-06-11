@@ -1,0 +1,6 @@
+---
+- name: Install cloud-init
+  yum:
+    name: "{{ service_name }}"
+    state: present
+

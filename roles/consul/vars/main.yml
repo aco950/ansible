@@ -1,0 +1,6 @@
+---
+# Here are some variables related to the Ansible consul-server role.
+
+service_name: "consul"
+user_name: "allan"
+

@@ -1,0 +1,9 @@
+---
+- name: Create Consul data directory
+  file:
+    path: "/opt/{{ service_name }}"
+    state: directory
+    owner: "{{ service_name }}"
+    group: "{{ service_name }}"
+    mode: 0755
+

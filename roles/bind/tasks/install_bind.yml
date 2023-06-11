@@ -1,0 +1,6 @@
+---
+- name: Install bind and bind-utils (bind-utils provides dig)
+  yum:
+    name: ["bind", "bind-utils"]
+    state: installed
+

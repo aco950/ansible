@@ -1,0 +1,17 @@
+---
+# Install Consul.
+
+- name: Check if Consul is installed on the system
+  stat:
+    path: "{{ prefix }}/{{ service_name }}"
+  register: results
+
+- name: Download, unzip and install Consul 
+  unarchive:
+    src: "https://releases.hashicorp.com/{{ service_name }}/{{ version }}/{{ service_name }}_{{ version }}_linux_amd64.zip"
+    # 'dest' needs to be an existing directory:
+    dest: /usr/local/bin
+    remote_src: yes
+    mode: 0755
+  when: results.stat.exists == False
+

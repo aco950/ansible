@@ -1,0 +1,10 @@
+---
+- name: Copy customized named.conf and backup if different 
+  copy:
+    src: "{{ service_name }}.conf"
+    dest: "/etc/{{ service_name }}.conf"
+    owner: root
+    group: "{{ service_name }}"
+    mode: 0640
+    backup: yes
+

@@ -1,0 +1,13 @@
+---
+# Create the Consul user and group.
+# NOTE: The group is created automatically and set to username.
+
+- name: Create the Consul user and group
+  user:
+    name: "{{ service_name }}"
+    comment: Consul User
+    home: "/etc/{{ service_name }}.d"
+    shell: /usr/bin/false
+    system: yes
+    state: present
+
