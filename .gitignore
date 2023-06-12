@@ -1,0 +1,8 @@
+#
+# .gitignore for Ansible-related repository.
+#
+
+*.bak
+*.log
+*.txt
+

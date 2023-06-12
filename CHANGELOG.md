@@ -1,3 +1,9 @@
+# [1.2.0] (June 12, 2023)
+
+### Added
+
+- Added `.gitignore`.
+
 # [1.1.0] (June 11, 2023)
 
 ### Added
@@ -9,6 +15,7 @@
 
 - Initial commit.
 
+[1.2.0]: https://github.com/aco950/ansible/releases/tag/v1.2.0
 [1.1.0]: https://github.com/aco950/ansible/releases/tag/v1.1.0
 [1.0.0]: https://github.com/aco950/ansible/releases/tag/v1.0.0
 
