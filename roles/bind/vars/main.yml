@@ -1,5 +1,5 @@
 ---
-# Here are some variables related to the Ansible consul-server role.
+# Here are some variables related to the Ansible consul role.
 
 service_name: "named"
 

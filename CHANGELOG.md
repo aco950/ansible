@@ -1,3 +1,12 @@
+# [1.2.1] (June 12, 2023)
+
+### Fixed
+
+- Cleaned up spacing for consistency.
+- Improved comment format consistency in `roles/bind/files/named.conf`.
+- Added descriptive comments in `roles/bind/files/resolv.conf`.
+- Fixed comments in `roles/bind/vars/main.yml`.
+
 # [1.2.0] (June 12, 2023)
 
 ### Added
@@ -15,6 +24,7 @@
 
 - Initial commit.
 
+[1.2.1]: https://github.com/aco950/ansible/releases/tag/v1.2.1
 [1.2.0]: https://github.com/aco950/ansible/releases/tag/v1.2.0
 [1.1.0]: https://github.com/aco950/ansible/releases/tag/v1.1.0
 [1.0.0]: https://github.com/aco950/ansible/releases/tag/v1.0.0
