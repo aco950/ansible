@@ -1,3 +1,9 @@
+# [1.3.1] (June 20, 2023)
+
+### Fixed
+
+- Cleaned up spacing for consistency.
+
 # [1.3.0] (June 19, 2023)
 
 ### Added
@@ -32,6 +38,7 @@
 
 - Initial commit.
 
+[1.3.1]: https://github.com/aco950/ansible/releases/tag/v1.3.1
 [1.3.0]: https://github.com/aco950/ansible/releases/tag/v1.3.0
 [1.2.1]: https://github.com/aco950/ansible/releases/tag/v1.2.1
 [1.2.1]: https://github.com/aco950/ansible/releases/tag/v1.2.1
