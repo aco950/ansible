@@ -1,0 +1,11 @@
+---
+- name: Copy Consul systemd service file
+  copy:
+    #src: consul.service
+    src: "{{ service_name }}.service"
+    #dest: /etc/systemd/system/consul.service
+    dest: "/etc/systemd/system/{{ service_name }}.service"
+    owner: root
+    group: root 
+    mode: 0644
+

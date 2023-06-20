@@ -1,0 +1,9 @@
+---
+- name: Copy Nomad common configuration file
+  copy:
+    src: nomad.hcl
+    dest: /etc/nomad.d/nomad.hcl
+    owner: root
+    group: root
+    mode: 0644
+

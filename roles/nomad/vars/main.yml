@@ -1,0 +1,6 @@
+---
+# Here are some variables related to the Ansible nomad role.
+
+service_name: "nomad"
+user_name: "root"
+

@@ -1,0 +1,23 @@
+[Unit]
+Description="HashiCorp Consul - A service mesh solution"
+Documentation=https://www.consul.io/
+Requires=network-online.target
+After=network-online.target
+ConditionFileNotEmpty=/etc/consul.d/consul.hcl
+
+[Service]
+Type=notify
+User=consul
+Group=consul
+# Consul will complain about multiple interfaces detected if we are
+# running Docker, so set Consul to listen on eth0:
+ExecStart=/usr/local/bin/consul agent -config-dir=/etc/consul.d/ -data-dir=/opt/consul -bind '{{ GetInterfaceIP "eth0" }}' -client 0.0.0.0
+ExecReload=/usr/local/bin/consul reload
+ExecStop=/usr/local/bin/consul leave
+KillMode=process
+Restart=on-failure
+LimitNOFILE=65536
+
+[Install]
+WantedBy=multi-user.target
+

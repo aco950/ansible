@@ -1,0 +1,17 @@
+---
+- name: Create Nomad data directory
+  file:
+    path: "/opt/{{ service_name }}"
+    state: directory
+    owner: root
+    group: root
+    mode: 0755
+
+- name: Create Nomad config directory
+  file:
+    path: "/etc/{{ service_name }}.d"
+    state: directory
+    owner: root
+    group: root
+    mode: 0700
+

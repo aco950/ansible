@@ -1,0 +1,9 @@
+---
+- name: Copy Nomad server configuration file
+  copy:
+    src: server.hcl
+    dest: "/etc/{{ service_name }}.d/server.hcl"
+    owner: "{{ user_name }}"
+    group: "{{ user_name }}"
+    mode: 0644
+

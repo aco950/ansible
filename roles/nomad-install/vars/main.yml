@@ -1,0 +1,7 @@
+---
+# Here are some variables related to the Ansible nomad role.
+
+version: "1.5.6"
+service_name: "nomad"
+prefix: "/usr/local/bin"
+

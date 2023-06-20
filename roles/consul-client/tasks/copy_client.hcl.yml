@@ -1,0 +1,9 @@
+---
+- name: Copy Consul client configuration file
+  copy:
+    src: client.hcl
+    dest: "/etc/{{ service_name }}.d/client.hcl"
+    owner: "{{ user_name }}"
+    group: "{{ user_name }}"
+    mode: 0640
+

@@ -1,0 +1,18 @@
+---
+# Install Nomad.
+
+- name: Check if Nomad is installed on the system
+  stat:
+    path: "{{ prefix }}/{{ service_name }}"
+  register: results
+
+- name: Download, unzip and install Nomad
+  unarchive:
+    # https://releases.hashicorp.com/nomad/1.5.6/nomad_1.5.6_linux_amd64.zip
+    src: "https://releases.hashicorp.com/{{ service_name }}/{{ version }}/{{ service_name }}_{{ version }}_linux_amd64.zip"
+    # 'dest' needs to be an existing directory:
+    dest: /usr/local/bin
+    remote_src: yes
+    mode: 0755
+  when: results.stat.exists == False
+

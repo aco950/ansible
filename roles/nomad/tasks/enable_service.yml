@@ -1,0 +1,6 @@
+---
+- name: Enable service
+  systemd: 
+    name: "{{ service_name }}"
+    enabled: yes 
+

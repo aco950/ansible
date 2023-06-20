@@ -1,0 +1,9 @@
+---
+- name: Copy Consul systemd service file
+  copy:
+    src: consul.service
+    dest: /etc/systemd/system/consul.service
+    owner: root
+    group: root 
+    mode: 0644
+

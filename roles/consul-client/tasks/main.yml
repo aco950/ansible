@@ -1,0 +1,8 @@
+---
+# This playbook contains common tasks that will be run on all Consul
+# client nodes.
+
+- import_tasks: copy_client.hcl.yml
+- import_tasks: copy_consul.service.yml
+- import_tasks: enable_service.yml
+

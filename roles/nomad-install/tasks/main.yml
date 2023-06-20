@@ -1,0 +1,9 @@
+---
+# This playbook contains common tasks that will be run on all Nomad 
+# nodes.
+
+- import_tasks: install_nomad.yml
+- import_tasks: create_directory.yml
+- import_tasks: copy_nomad.hcl.yml
+- import_tasks: copy_nomad.service.yml
+
