@@ -1,3 +1,10 @@
+# [1.3.2] (June 20, 2023)
+
+### Fixed
+
+- Modified `roles/nomad/files/server.hcl` in order to enhance clarity 
+  of comments.
+
 # [1.3.1] (June 20, 2023)
 
 ### Fixed
@@ -38,6 +45,7 @@
 
 - Initial commit.
 
+[1.3.2]: https://github.com/aco950/ansible/releases/tag/v1.3.2
 [1.3.1]: https://github.com/aco950/ansible/releases/tag/v1.3.1
 [1.3.0]: https://github.com/aco950/ansible/releases/tag/v1.3.0
 [1.2.1]: https://github.com/aco950/ansible/releases/tag/v1.2.1
