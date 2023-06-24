@@ -1,3 +1,11 @@
+# [1.3.3] (June 24, 2023)
+
+### Fixed
+
+- Cleaned up excess comments from 
+  `roles/nomad-install/tasks/copy_nomad.service.yml`, and
+  `roles/nomad-install/tasks/copy_nomad.service.yml`.
+
 # [1.3.2] (June 20, 2023)
 
 ### Fixed
@@ -45,6 +53,7 @@
 
 - Initial commit.
 
+[1.3.3]: https://github.com/aco950/ansible/releases/tag/v1.3.3
 [1.3.2]: https://github.com/aco950/ansible/releases/tag/v1.3.2
 [1.3.1]: https://github.com/aco950/ansible/releases/tag/v1.3.1
 [1.3.0]: https://github.com/aco950/ansible/releases/tag/v1.3.0
