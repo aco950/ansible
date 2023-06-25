@@ -1,3 +1,10 @@
+# [2.2.1] (June 25, 2023)
+
+### Removed
+
+- Removed file `resolv.conf` in nomad-server role (not in use by any
+  playbooks).
+
 # [2.2.0] (June 25, 2023)
 
 ### Changed
@@ -84,6 +91,7 @@
 
 - Initial commit.
 
+[2.2.1]: https://github.com/aco950/ansible/releases/tag/v2.2.1
 [2.2.0]: https://github.com/aco950/ansible/releases/tag/v2.2.0
 [2.1.0]: https://github.com/aco950/ansible/releases/tag/v2.1.0
 [2.0.0]: https://github.com/aco950/ansible/releases/tag/v2.0.0
