@@ -4,7 +4,7 @@
   connection: local
   gather_facts: no
   roles:
-    - role: consul
+    - role: consul-server
     - role: cloud-init
     # The 'bind' role goes last, as modifying resolv.conf can cause 
     # issues with Packer provisioning. In this case, the role is setting

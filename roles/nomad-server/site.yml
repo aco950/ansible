@@ -4,7 +4,6 @@
   connection: local
   gather_facts: no
   roles:
-    - role: nomad 
-    - role: consul-client
+    - role: nomad-server
     - role: cloud-init
 

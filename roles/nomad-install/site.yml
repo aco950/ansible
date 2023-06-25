@@ -4,5 +4,6 @@
   connection: local
   gather_facts: no
   roles:
+    - role: consul-client
     - role: nomad-install
 

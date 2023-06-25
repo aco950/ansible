@@ -1,3 +1,17 @@
+# [2.0.0] (June 25, 2023)
+
+### Changed
+
+- Renamed `consul` role to `consul-server` for clarity. Updated related
+  playbooks. 
+
+- Renamed `nomad` role to `nomad-server` for clarity. Updated related
+  playbooks. 
+
+- Updated `nomad-install` role to include provisioning for nodes as a
+  Consul client. For my purposes, nodes where Nomad is installed will 
+  also be Consul clients.
+
 # [1.3.3] (June 24, 2023)
 
 ### Fixed
@@ -53,6 +67,7 @@
 
 - Initial commit.
 
+[2.0.0]: https://github.com/aco950/ansible/releases/tag/v2.0.0
 [1.3.3]: https://github.com/aco950/ansible/releases/tag/v1.3.3
 [1.3.2]: https://github.com/aco950/ansible/releases/tag/v1.3.2
 [1.3.1]: https://github.com/aco950/ansible/releases/tag/v1.3.1
