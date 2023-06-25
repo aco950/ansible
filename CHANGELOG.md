@@ -1,3 +1,13 @@
+# [2.2.0] (June 25, 2023)
+
+### Changed
+
+- Removed the cloud-init role in `roles/nomad-server/site.yml` as part 
+  of task consolidation for installing and enabling cloud-init.
+
+- Removed task `copy_resolv.conf` and `copy_resolv.conf.yml` from 
+  nomad-server role.
+
 # [2.1.0] (June 25, 2023)
 
 ### Changed
@@ -74,6 +84,7 @@
 
 - Initial commit.
 
+[2.2.0]: https://github.com/aco950/ansible/releases/tag/v2.2.0
 [2.1.0]: https://github.com/aco950/ansible/releases/tag/v2.1.0
 [2.0.0]: https://github.com/aco950/ansible/releases/tag/v2.0.0
 [1.3.3]: https://github.com/aco950/ansible/releases/tag/v1.3.3

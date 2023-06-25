@@ -4,5 +4,4 @@
 
 - import_tasks: copy_server.hcl.yml
 - import_tasks: enable_service.yml
-- import_tasks: copy_resolv.conf.yml
 
